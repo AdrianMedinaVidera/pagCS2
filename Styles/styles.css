@@ -144,10 +144,14 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    background-color: rgb(224, 224, 224);
     font-family: "M PLUS Rounded 1c", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+body::-webkit-scrollbar { /* Hace la barra invisible */
+    width: 0px; 
+    background: transparent; 
 }
 
 main {
