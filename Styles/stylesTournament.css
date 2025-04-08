@@ -13,6 +13,36 @@
     margin: 20px;
 }
 
+.main_title {
+    text-align: center;
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 72px;
+    margin: 20px 0 60px 0;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 20px 0;
+}
+
+.main_title::before,
+.main_title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ff3333, transparent);
+}
+
+.main_title::before {
+    top: 0;
+}
+
+.main_title::after {
+    bottom: 0;
+}
+
 .nav_container {
     display: flex;
     justify-content: center;
