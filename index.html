@@ -31,19 +31,28 @@
                     </svg>
                 </li>
             </a>
-            <li class="li_menu">
+            <li class="li_menu" id="menuToggle">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                 </svg>
+                <div class="expanded-menu" id="expandedMenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="teams.html">Equipos</a></li>
+                        <li><a href="tournament.html">Torneo</a></li>
+                        <li><a href="#">Tema C/O</a></li>
+                    </ul>
+                </div>
             </li>
         </nav>
-    </div>
+        </div>
     <div class="max_container">
         <div class="header_container">
             <header class="header">
                 <div class="video_background_container">
                     <img class="hero_image" alt="banner principal del torneo de counter strike"
                         src="./Assets/Logo-Titulo.png">
+                    <img src="./Assets/qrcode.png" alt="QR Code para registro" class="qr_code_overlay">
                     <video class="video_background" autoplay loop muted poster="ruta/a/tu/poster.jpg"> <!--TODO-->
                         <source src="Assets/landingvideo.mp4" type="video/mp4">
                         <source src="Assets/landingvideo.webm" type="video/webm">
@@ -82,11 +91,9 @@
             </div>
         </div>
     </main>
+    <footer>
+        <p>&copy; 2033 La Ira de Carlos. Todos los derechos reservados.</p>
+    </footer>
+    <script src="./Scripts/script.js"></script>
 </body>
-<footer>
-    <p>&copy; 2033 La Ira de Carlos. Todos los derechos reservados.</p>
-</footer>
-</div>
-</body>
-
 </html>
