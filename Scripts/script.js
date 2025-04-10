@@ -1,15 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menuToggle');
-    const expandedMenu = document.getElementById('expandedMenu');
+document.addEventListener('DOMContentLoaded', () => {
+    const nav = document.querySelector('.nav');
+    const fourthButton = document.querySelectorAll('.menuToggle');
 
-    menuToggle.addEventListener('click', function() {
-        expandedMenu.classList.toggle('active');
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
-        if (!menuToggle.contains(event.target) && expandedMenu.classList.contains('active')) {
-            expandedMenu.classList.remove('active');
-        }
+    fourthButton.addEventListener('click', () => {
+        nav.classList.toggle('expanded');
     });
 });
